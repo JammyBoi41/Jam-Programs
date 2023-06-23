@@ -1,0 +1,58 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    height: 800px;
+    margin-bottom: 100px;
+    position: relative;
+}
+
+@keyframes fadeAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+.home h1{
+    animation-name: fadeAnimation;
+    animation-duration: 0.7s;
+    animation-timing-function: ease-in;
+    color: white;
+    font-weight: 800;
+    font-size: 50px;
+}
+
+.home h2 {
+    width: 800px;
+    text-align: center;
+    line-height: 30px;
+    color: rgb(166, 166, 166);
+}
+
+.about-me {
+    opacity: 0; /* set it invisible initially*/
+    animation: fadeAnimation;
+    animation-fill-mode: forwards; /* makes it stay (like QAnimation.finished in PySide) */
+    animation-duration: 1s; /* wait between the h1 and h2*/
+    animation-delay: 1s;
+}
+
+.lets-go {
+    opacity: 0;
+    animation: fadeAnimation;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    animation-delay: 2s;
+}
+
+.home span {
+    color: #00ffff;
+}

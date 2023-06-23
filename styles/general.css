@@ -1,0 +1,12 @@
+body {
+    background-color: black;
+    font-family: sans-serif;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* by default, everything in main will appear in the center*/
+}
+

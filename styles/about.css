@@ -1,0 +1,144 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    align-items: center;
+}
+
+.about-div {
+    margin-top: 0px;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+
+@keyframes fadeInLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transformX: translateX(0);
+        opacity: 1;
+    }
+}
+
+.title1 {
+    margin-bottom: 0px;
+}
+
+.portrait-div {
+    opacity: 0; /*stay invisible until animation starts*/
+    animation: fadeInLeft;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+    animation-timing-function: ease-out;
+    width: 250px;
+    height: 100%;
+    margin-left: 40px;
+}
+
+.portrait {
+    margin-top: 30px;
+    contain: content;
+    width: 240px;
+    height: 240px;
+    border-radius: 150px;
+    border: 3px solid rgba(166, 166, 166, 0.5);
+}
+
+
+
+
+.about-info {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height: 400px;
+    align-items: center;
+}
+
+.about div h1::after {
+    content: "";
+    position: absolute;
+    background: #22ffff;
+    left: 0;
+    right: 0;
+    bottom: 8px;
+    width: 100%;
+    height: 1px;
+}
+
+
+.h1-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: auto;
+    padding: 0;
+}
+
+.about h1 {
+    position: relative; 
+    top: 0;
+    font-size: 40px;
+    color: white;
+    font-weight: 800;
+    margin: 0; /* h1 also comes with margins*/
+}
+
+.about h1::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: #22ffff;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+}
+
+
+.h2-container {
+    opacity: 0;
+    animation: fadeInRight;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-delay: 3.5s;
+    animation-fill-mode: forwards;
+    flex: 1;
+    color: rgb(166, 166, 166);
+    font-size: 25px;
+    margin-top: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+    line-height: 33px;
+}
+
+.about h2 {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.u {
+    color: rgba(255, 165, 0, 0.8);
+}
+.f {
+    color: rgba(0, 0, 255, 0.8);
+}

@@ -1,0 +1,100 @@
+.project {
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+}
+
+.project img {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border-radius: 10px;
+}
+.project button {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+span {
+    color: #22ffff;
+}
+
+
+
+.title{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    height: 80px;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.title h1 {
+    position: relative;
+    color: white;
+    font-weight: 800;
+    font-size: 50px;
+    margin: 0;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.title h1::after {
+    content: "";
+    position: absolute;
+    background: #22ffff;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+}
+
+.project-container {
+    display: flex;
+    flex-direction: column;
+}
+.project-row {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 100px;
+}
+.project-thumbnail {
+    padding-left: 30px;
+    width: 500px;
+}
+
+.myButton {
+    background: transparent;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: box-shadow 0.25s;
+
+}
+.myButton:hover {
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5);
+}
+
+
+
+
+.project-info {
+    display: flex; /* for setting align-items: center if need be*/ 
+    align-items: center;
+    flex: 1;
+    margin-left: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.project h2 {
+    color: white;
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 23px;
+    color: rgba(166, 166, 166, 0.8);
+}
+

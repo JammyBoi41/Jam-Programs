@@ -1,0 +1,41 @@
+.header {
+    background-color: black;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%; /* position:fixed messes it up so set it manually*/
+    height: 60px;   
+    top: 0px;
+    z-index: 100; /* the background wasn't turning transparent, it was just a z-index issue*/
+}
+.header button {
+    background-color: black;
+    color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 18px;
+    position: relative;
+}
+
+.header button::after {
+    content: '';
+    height: 1px; /* this and background make it appear */ 
+    background: #00ffff;
+    position: absolute;
+    width: 0%;
+    bottom: 0; /* from the bottom of respective button in header*/
+    left: 0;
+    right: 0;
+    top: 25px;
+    transition: 0.2s;
+}
+
+.header button:hover::after {
+    height: 1px;
+    width: 100%;
+}
+
