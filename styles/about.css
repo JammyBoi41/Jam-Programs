@@ -1,8 +1,9 @@
 .about {
     display: flex;
     flex-direction: column;
-    height: 500px;
+    min-height: 75vh;
     align-items: center;
+    margin-bottom: 2vw;
 }
 
 .about-div {
@@ -88,14 +89,15 @@
     display: flex;
     align-items: center;
     position: relative;
-    height: auto;
     padding: 0;
+    width: 1.8vw;
+    overflow: hidden;
 }
 
 .about h1 {
     position: relative; 
     top: 0;
-    font-size: 40px;
+    font-size: 3vw;
     color: white;
     font-weight: 800;
     margin: 0; /* h1 also comes with margins*/
@@ -126,14 +128,14 @@
     margin-top: 10px;
     padding-left: 50px;
     padding-right: 50px;
-    text-align: center;
-    line-height: 33px;
+    text-align: justify;
+    line-height: 2.5vw;
 }
 
 .about h2 {
     font-family: Montserrat;
     font-weight: 400;
-    font-size: 25px;
+    font-size: 2vw;
 }
 
 .u {
