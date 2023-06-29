@@ -12,6 +12,7 @@
         <link rel="stylesheet" href="styles/home.css">
         <link rel="stylesheet" href="styles/about.css">
         <link rel="stylesheet" href="styles/projects.css">
+        <link rel="stylesheet" href="styles/extracurriculars.css">
     </head>
     <body>
         <main>
@@ -50,9 +51,9 @@
                     <h1>Who am I?</h1>
                 </div>
                 <div class="about-div">
-                    <!--<div class="portrait-div">
+                    <div class="portrait-div">
                         <img class="portrait" src="images/me">
-                    </div>-->
+                    </div>
                     <div class="about-info">
                         <div class="h2-container">
                             <h2>
@@ -65,6 +66,8 @@
                     </div>
                 </div>
             </section>
+
+            
 
             <section class="project"> <!--be careful, header button named 'projects'-->
                 <div class="title">
@@ -104,18 +107,113 @@
                                 </a>
                             </div>
                         </div>
-                        
                     </div>
                 </div>
             </section>
 
-            <section class="Extracurriculars">
-                <div class="ball-container">
-                    <div class="ball1"></div>
-
+            <section class="extracurriculars">
+                <div class="title">
+                    <h1>Extracurriculars</h1>
                 </div>
-            </section>
 
+                <div class="extracurricular-container">
+                    <div class="ball-container">
+                        <div class="ball1">
+                            <button onclick="swapText('ball1')" class="overlay"></button>
+                        </div>  
+                        <div class="ball2">
+                            <button onclick="swapText('ball2')" class="overlay"></button>
+                        </div>
+                        <div class="ball3">
+                            <button onclick="swapText('ball3')" class="overlay"></button>
+                        </div>
+                    </div>
+
+                    <div class="js-project-desc project-desc">
+                        
+                    </div>
+                </div>
+                
+            </section>
         </main>
+
+        <script>
+            
+            function swapText(ballNumber) {
+                
+                let ball = document.querySelector(`.${ballNumber}`); //currente .ball_ object being clicked on
+                toggleOff(); //makes sure to toggle off any other clicked button before clicking the new button
+                ball.classList.add('ballClicked');
+
+                const project_desc = document.querySelector('.project-desc');
+                
+                if(ballNumber === 'ball1') { //ball for KUSA
+                    const toChange = 'KUSA';
+                    const previousExists = swapDesc(toChange);
+                    if(previousExists) {
+                        setTimeout(function() { //USE setTimeout BECAUSE JAVASCRIPT TIMING DOESN'T WAIT FOR AN ANIMATION TO FINISH BEFORE EXECUTING A SINGLE LINE CODE
+                            project_desc.classList.remove('ballDescRemove');
+                        },  500);
+                    }
+                    
+                    
+                    project_desc.classList.add('ballDesc');
+                    const ballDesc = document.querySelector('.ballDesc');
+                    if(previousExists) { //if previous exists you want to wait for the previous desc to fade out before fading the new thing in. else, it means it's the first click of a new refresh so show the desc immediately
+                        setTimeout(function() {
+                            ballDesc.innerHTML = toChange;
+                        }, 500);
+                    }
+                    else {
+                        ballDesc.innerHTML = toChange;
+                    }
+                    
+                }
+                else if(ballNumber === 'ball2') {
+                    const toChange = 'FLC';
+                    const previousExists = swapDesc(toChange);
+                    setTimeout(function() { //USE setTimeout BECAUSE JAVASCRIPT TIMING DOESN'T WAIT FOR AN ANIMATION TO FINISH BEFORE EXECUTING A SINGLE LINE CODE
+                        if(previousExists) {
+                            project_desc.classList.remove('ballDescRemove');
+                        }
+                    }, 500);
+                    
+                    project_desc.classList.add('ballDesc');
+                    const ballDesc = document.querySelector('.ballDesc');
+                    if(previousExists) {
+                        setTimeout(function() {
+                            ballDesc.innerHTML = toChange;
+                        }, 500);
+                    }
+                    else {
+                        ballDesc.innerHTML = toChange;
+                    }
+                    
+                    
+                    
+                }
+                else {
+                    const toChange = 'IRHA';
+                }
+            }
+            
+            function toggleOff() {
+                const previousButton = document.querySelector('.ballClicked');
+                if(previousButton) {
+                    previousButton.classList.remove('ballClicked'); //the . DOESN'T go before this one but yes with the query
+                } //add fade out to current text thne remove it
+            }
+
+            function swapDesc(toChange) {
+                const previousText = document.querySelector('.ballDesc');
+                if(previousText) {
+                    if(previousText.innerHTML !== toChange) {
+                        previousText.classList.add('ballDescRemove');
+                        return true;
+                    }
+                }
+                return false;
+            }
+        </script>
     </body>
 </html>

@@ -1,7 +1,8 @@
 .project {
     display: flex;
     flex-direction: column;
-    height: 800px;
+    height: auto;
+    margin-bottom: 2vw;
 }
 
 .project img {
@@ -94,12 +95,11 @@ span {
     margin-left: 0px;
 }
 .project h2 {
-    color: white;
     font-family: Montserrat;
     font-weight: 400;
     font-size: 1.5vw;
     line-height: 2.2vw;
-    color: rgba(166, 166, 166, 0.8);
+    color: rgba(166, 166, 166, 1);
 }
 
 
