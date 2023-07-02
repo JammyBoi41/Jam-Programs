@@ -3,21 +3,24 @@
     flex-direction: column;
     color: white;
     margin-top: 50px;
-    height: 800px; /* change later */
+    height: 800px; /* CHANGE LATER PLEASE */
 }
 
-.title {
-    margin-bottom: 100px;
+
+span {
+    color: #00ffff;
 }
+
+
 
 .extracurricular-container {
     display: flex;
     flex-direction: row;
+    height: 400px; /*made a little bigger than the height of the biggest paragraph so items don't shift around*/
 }
 
 .ball-container{
     display: flex;
-    align-items: center;
 }
 
 .ball1,.ball2,.ball3 {
@@ -49,7 +52,7 @@
 }
 
 .overlay {
-    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,1));
+    background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,1));
     opacity: 1;
     z-index: 5;
     position: absolute;
@@ -135,6 +138,15 @@
     font-size: 1.6vw;
     color: rgba(166, 166, 166, 1);
 }
+.extra-info {
+    margin-top: 0.9vw;
+    font-family: Montserrat;
+    font-weight: 300;
+    font-size: 1.6vw;
+    color: rgba(166, 166, 166, 1);
+}
+
+
  
 
 

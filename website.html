@@ -18,23 +18,23 @@
         <main>
             <section class="header-section">
                 <header class="header">
-                    <button class="home-button">
+                    <button onclick="scrollToSection('home')" class="home-button">
                         Home
                     </button>
-                    <button class="about-button">
+                    <button onclick="scrollToSection('about')" class="about-button" >
                         About
                     </button>
-                    <button class="projects-button">
+                    <button onclick="scrollToSection('project')" class="projects-button">
                         Projects
                     </button>
-                    <button class="extracurriculars-button">
+                    <button onclick="scrollToSection('extracurriculars')" class="extracurriculars-button">
                         Extracurriculars
                     </button>
                 </header>
             </section>  
             
 
-            <section class="home">
+            <section class="home" id="home">
                 <div>
                     <h1 class="">HI, I'M JAM</h1>
                 </div>
@@ -46,7 +46,7 @@
                 </div>
             </section>
 
-            <section class="about">
+            <section class="about" id="about">
                 <div class="title1">
                     <h1>Who am I?</h1>
                 </div>
@@ -69,7 +69,7 @@
 
             
 
-            <section class="project"> <!--be careful, header button named 'projects'-->
+            <section class="project" id="project"> <!--be careful, header button named 'projects'-->
                 <div class="title">
                     <h1>Projects</h1>
                 </div>
@@ -111,7 +111,7 @@
                 </div>
             </section>
 
-            <section class="extracurriculars">
+            <section class="extracurriculars" id="extracurriculars">
                 <div class="title">
                     <h1>Extracurriculars</h1>
                 </div>
@@ -131,11 +131,12 @@
 
                     <div class="js-extra-desc extra-desc">
                         <div class="js-extra-title extra-title">
-
                         </div>
+
                         <div class="js-extra-time extra-time">
-
                         </div>
+
+                        <div class="js-extra-info extra-info"></div>
                     </div>
                 </div>
                 
