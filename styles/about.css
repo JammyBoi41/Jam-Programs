@@ -5,12 +5,19 @@
     align-items: center;
     margin-bottom: 2vw;
 }
+.about .title h1{
+    margin-bottom: 0px;
+}
 
 .about-div {
     margin-top: 0px;
     display: flex;
     flex: 1;
     justify-content: center;
+}
+.picture {
+    display: flex;
+    flex-direction: column;
 }
 
 @keyframes fadeInLeft {
@@ -37,9 +44,7 @@
     }
 }
 
-.title1 {
-    margin-bottom: 0px;
-}
+
 
 .portrait-div {
     width: 250px;
@@ -67,47 +72,6 @@
     align-items: center;
 }
 
-.about div h1::after {
-    content: "";
-    position: absolute;
-    background: #22ffff;
-    left: 0;
-    right: 0;
-    bottom: 8px;
-    width: 100%;
-    height: 1px;
-}
-
-
-.h1-container {
-    display: flex;
-    align-items: center;
-    position: relative;
-    padding: 0;
-    width: 1.8vw;
-    overflow: hidden;
-}
-
-.about h1 {
-    position: relative; 
-    top: 0;
-    font-size: 3vw;
-    color: white;
-    font-weight: 800;
-    margin: 0; /* h1 also comes with margins*/
-}
-
-.about h1::after {
-    content: "";
-    width: 100%;
-    height: 1px;
-    background: #22ffff;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    position: absolute;
-}
-
 
 .h2-container {
     flex: 1;
@@ -127,9 +91,3 @@
     font-size: 1.5vw;
 }
 
-.u {
-    color: rgba(255, 165, 0, 0.8);
-}
-.f {
-    color: rgba(0, 0, 255, 0.8);
-}

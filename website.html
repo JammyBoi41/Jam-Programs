@@ -6,6 +6,9 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Montserrat:wght@200;400&display=swap" rel="stylesheet">
 
         <link rel="stylesheet" href="styles/general.css">
         <link rel="stylesheet" href="styles/header.css">
@@ -47,17 +50,24 @@
             </section>
 
             <section class="about" id="about">
-                <div class="title1">
-                    <h1>Who am I?</h1>
+                <div class="title">
+                    <h1>ABOUT</h1>
                 </div>
                 <div class="about-div">
-                    <div class="portrait-div">
-                        <img class="portrait" src="images/me">
+                    <div class="picture"> <!-- portrait and links -->
+                        <div class="portrait-div">
+                            <img class="portrait" src="images/me">
+                        </div>
+                        <div class="links">
+
+                        </div>
                     </div>
+                    
+
                     <div class="about-info">
                         <div class="h2-container">
                             <h2>
-                                A Rising Junior at <span class="u">U</span><span class="f">F</span>, I've long had an interest in tech. Being a CS student, I strive to discover everything I can related to Software Engineering and have been fortunate enough to be given the opportunity to develop some of my own projects as well as working within a team setting with others to contribute towards an end product as well. I'm willing to explore all realms related to the tech industry, hoping to dedicate my persistence and problem-solving ability to an organization who can mutually benefit me with experience and a culture for growth.  
+                                A Rising Junior at UF, I've long had an interest in tech. Being a CS student, I strive to discover everything I can related to Software Engineering and have been fortunate enough to be given the opportunity to develop some of my own projects as well as working within a team setting with others to contribute towards an end product as well. I'm willing to explore all realms related to the tech industry, hoping to dedicate my persistence and problem-solving ability to an organization who can mutually benefit me with experience and a culture for growth.  
                             </h2>
                             <h2>
                                 Outside of academia and professional development, I enjoy weightlifting, longboarding around my campus, and spending time with friends both on campus and back at home.
@@ -71,49 +81,51 @@
 
             <section class="project" id="project"> <!--be careful, header button named 'projects'-->
                 <div class="title">
-                    <h1>Projects</h1>
+                    <h1>PROJECTS</h1>
                 </div>
                 <div class="project-container"> 
-                    <div class="project-row">
-                        <div class="container">
-                            <div class="project-thumbnail">
-                                <a href="https://github.com/JammyBoi41/Fitness2" target="_blank">
-                                    <button class="myButton">
-                                        <img class="thumbnail" src="images/Fitness2.png">
-                                    </button>
-                                </a>
-                            </div>
+                    <div class="card1">
+                        <div class="front">
+                            <button>
+                                <img src="images/Fitness2.png">
+                            </button>
                         </div>
-                        
-                        <div class="project-info">
-                            <h2>
+                        <div class="back">
+                            <div class="project-desc"> 
                                 <span>Jam's Powerlifting App</span> - A personal project that combines a passion for fitness and software development, this application's back-end was written in Python and front-end development was done with Qt(PySide6). It incorporates the Python package <i>sqlite3</i> for storing user information. It makes use of a public database to provide the user with a pre-loaded list of food options to log for convenience, while also allowing them to log custom meals as well. Additionally, it supports Personal Record tracking for the 3 powerlifts, as well as nutritional display for tracking calories and protein intake, all in a custom, simplified interface.
-                            </h2>
-                        </div>
-
-                    </div>
-                    <div class="project-row">
-                        <div class="project-info2">
-                            <h2>
-                                <span>Flight Delay Calculator</span> - An average of one out of five flights get delayed every day. Due to these flight setbacks, our team developed a flight delay calculator using an existing database of flight times in order to calculate average flight delay time between 2 cities as well as their frequency of delay. In order to implement this in an efficient manner, we implemented our own Hash Table and Graph structures to allow for near-instant lookup, allowing for insight into both how likely and how long your flight is likely to be delayed for.
-                            </h2>
-                        </div>
-                        <div class="container2">
-                            <div class="project-thumbnail2">
-                                <a href="https://github.com/JammyBoi41/FinalProject" target="_blank">
-                                    <button class="myButton">
-                                        <img class="thumbnail" src="images/Airplanes.png">
-                                    </button>
-                                </a>
                             </div>
+                            <button></button> <!-- just so that the pointer stays on the backs too -->
                         </div>
                     </div>
+
+                    <div class="card2">
+                        <div class="front">
+                            <button>
+                                <img src="images/Airplanes.png">
+                            </button>
+                        </div>
+                        <div class="back">
+                            back
+                        </div>
+                    </div>
+
+                    <div class="card3">
+                        <div class="front">
+                            <button>
+                                <img src="images/Airplanes.png">
+                            </button>
+                        </div>
+                        <div class="back">
+                            back
+                        </div>
+                    </div>
+
                 </div>
             </section>
 
             <section class="extracurriculars" id="extracurriculars">
                 <div class="title">
-                    <h1>Extracurriculars</h1>
+                    <h1>EXTRACURRICULARS</h1>
                 </div>
 
                 <div class="extracurricular-container">
@@ -144,5 +156,6 @@
         </main>
 
         <script src="scripts/balls.js"> </script>
+        <script src="scripts/cards.js"> </script>
     </body>
 </html>

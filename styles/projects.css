@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     height: auto;
-    margin-bottom: 2vw;
+    margin-bottom: 4vw;
 }
 
 .project img {
@@ -10,11 +10,20 @@
     height: 100%;
     margin: 0;
     padding: 0;
+    border: none;
     border-radius: 10px;
+    
+
 }
 .project button {
+    width: 100%;
+    height: 100%;
     margin: 0;
     padding: 0;
+    border: none;
+    background-color: transparent;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
 span {
@@ -23,105 +32,67 @@ span {
 
 
 
-.title{
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    font-weight: 800;
-    align-items: center;
-    margin-bottom: 50px;
-}
 
-.title h1 {
-    position: relative;
-    font-size: 3vw;
-    color: white;
-    font-weight: 800;
-    margin: 0;
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
-.title h1::after {
-    content: "";
-    position: absolute;
-    background: #22ffff;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 1px;
-}
+
+
 
 .project-container {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    perspective: 1000px;    
 }
-.project-row {
+
+.card1,.card2,.card3 {
     display: flex;
-    flex-direction: row;
-    margin-bottom: 100px;
+    transform-style: preserve-3d;
+    transition: 0.4s ease all;
+    width: 400px;
+    height: 400px;
+    margin-left: 30px;
+    margin-right: 40px;
+    border-radius: 10px;
+    background-color: transparent;
+
 }
-.project-thumbnail {
+.card1:hover,.card2:hover,.card3:hover {
+    box-shadow: 0px 0px 40px rgba(255, 255, 255, 0.3);
+}
+.card1.rotate { /* for cards.js */
+    transform: rotateY(180deg);
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+
+}
+.front {
+    position: absolute; /* keeps the front and back on parent container (.card) */
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    color: white;
+    border-radius: 10px;
+    background-color: transparent;
+}
+.back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute; /* keeps the front and back on parent container (.card) */
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: rgba(22, 22, 22, 0.3);
+    color: white;
+    transform: rotateY(180deg); /* back is by-default already rotated*/
+    border-radius: 10px;
+    font-family: Montserrat;
+}
+.project-desc {
+    text-align: start;
+    font-family: Montserrat;
+    font-weight: 300;
+    font-size: 1vw;
+    line-height: 1.5vw;
+    color: rgba(166, 166, 166, 1);
     padding-left: 30px;
 }
 
-.myButton {
-    background: transparent;
-    border-radius: 10px;
-    border: none;
-    cursor: pointer;
-    transition: box-shadow 0.25s;
-    display: flex; /*this makes it take up as much space as img bc flex takes up only as much space as needed*/
-}
-.myButton:hover {
-    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5);
-}
-
-.thumbnail {
-    height: 100%;
-}
-
-
-.project-info, .project-info2 {
-    display: flex; /* for setting align-items: center if need be*/ 
-    align-items: center;
-    flex: 1;
-    margin-left: 30px;
-    padding-left: 20px;
-    padding-right: 20px;
-    text-align: justify;
-}
-.project-info2 {
-    margin-left: 0px;
-}
-.project h2 {
-    font-family: Montserrat;
-    font-weight: 400;
-    font-size: 1.5vw;
-    line-height: 2.2vw;
-    color: rgba(166, 166, 166, 1);
-}
-
-
-.container,.container2 { /* so to achieve this effect, make a parent container for the thumbnail and then set a perspective on it*/
-    perspective: 800px;
-    width: 40vw; /*since container is the immediate child of project-row now, you have to set the width to here not the project-thumbnail*/ 
-}
-.container2 {
-    margin-right: 20px;
-}
-.project-thumbnail {
-    transform: rotateY(20deg);
-    transition: transform 0.3s;
-}
-.project-thumbnail:hover {
-    transform: rotateY(0);
-}
-
-.project-thumbnail2 {
-    transform: rotateY(-20deg);
-    transition: 0.3s;
-}
-.project-thumbnail2:hover {
-    transform: rotateY(0);
-}

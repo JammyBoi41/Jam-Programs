@@ -2,8 +2,7 @@ body {
     background-color: #121212;
     font-family: sans-serif;
     padding: 0;
-    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,1)), url(background.jpg);
-
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(15, 15, 15, 1)), url(background.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
 }
@@ -14,4 +13,19 @@ main {
     flex-direction: column;
     justify-content: center; /* by default, everything in main will appear in the center*/
 }
+
+.title h1{ /* affects all titles*/
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-family: Agdasima;
+    position: relative;
+    font-size: 4vw;
+    color: white;
+    font-weight: 400;
+    margin-bottom: 30px;
+
+}
+
 
