@@ -58,8 +58,21 @@
                         <div class="portrait-div">
                             <img class="portrait" src="images/me">
                         </div>
-                        <div class="links">
+                        <div class="link-container">
+                            <div class="link">
+                                <img class="icon" src="icons/github-mark-white.png">
+                                JammyBoi41
+                            </div>
 
+                            <div class="link2">
+                                <img class="icon" src="icons/mail.png">
+                                jamin.chung@ufl.edu
+                            </div>
+
+                            <div class="link2">
+                                <img class="icon" src="icons/linkedin.png">
+                                jamin-chung
+                            </div>
                         </div>
                     </div>
                     
@@ -87,7 +100,7 @@
                     <div class="card1">
                         <div class="front">
                             <button>
-                                <img src="images/Fitness2.png">
+                                <img class="project-thumbnail" src="images/Fitness2.png">
                             </button>
                         </div>
                         <div class="back">
@@ -101,7 +114,7 @@
                     <div class="card2">
                         <div class="front">
                             <button>
-                                <img src="images/Airplanes.png">
+                                <img class="project-thumbnail" src="images/Airplanes.png">
                             </button>
                         </div>
                         <div class="back">
@@ -112,7 +125,7 @@
                     <div class="card3">
                         <div class="front">
                             <button>
-                                <img src="images/Airplanes.png">
+                                <img class="project-thumbnail" src="images/Airplanes.png">
                             </button>
                         </div>
                         <div class="back">
@@ -131,7 +144,7 @@
                 <div class="extracurricular-container">
                     <div class="ball-container">
                         <div class="ball1">
-                            <button onclick="swapText('ball1')" class="overlay"></button>
+                            <button onclick="swapText('ball1'); moveBalls();" onclick="moveBalls()" class="overlay"></button>
                         </div>  
                         <div class="ball2">
                             <button onclick="swapText('ball2')" class="overlay"></button>

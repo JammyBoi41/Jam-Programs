@@ -19,6 +19,28 @@
     display: flex;
     flex-direction: column;
 }
+.link-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.6vw;
+}
+.link,.link2 {
+    display: flex;
+    font-size: 2.5vw;
+    color: rgb(166, 166, 166);
+    font-family: Agdasima;
+    padding-left: 50px;
+
+}
+.link2 {
+    margin-top: 15px;
+}
+.icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
 
 @keyframes fadeInLeft {
     0% {
@@ -47,8 +69,8 @@
 
 
 .portrait-div {
+    display: flex;
     width: 250px;
-    height: 100%;
     margin-left: 40px;
 }
 

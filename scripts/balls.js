@@ -104,6 +104,12 @@ function swapText(ballNumber) {
     }
 }
 
+function moveBalls() {
+    const ball_container = document.querySelector('.ball-container');
+    ball_container.classList.add('moveBalls');
+    console.log('eh'); 
+}
+
 function scrollToSection(sectionId) { //self-explanatory
     var section = document.getElementById(sectionId);
     var headerHeight = document.querySelector('header').offsetHeight;
