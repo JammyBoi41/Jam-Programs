@@ -48,8 +48,8 @@ span {
     display: flex;
     transform-style: preserve-3d;
     transition: 0.4s ease all;
-    width: 400px;
-    height: 400px;
+    width: 26vw;
+    height: 26vw;
     margin-left: 30px;
     margin-right: 40px;
     border-radius: 10px;

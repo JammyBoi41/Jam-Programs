@@ -30,10 +30,9 @@
     color: rgb(166, 166, 166);
     font-family: Agdasima;
     padding-left: 50px;
-
 }
 .link2 {
-    margin-top: 15px;
+    margin-top: 8px;
 }
 .icon {
     width: 40px;
@@ -87,23 +86,20 @@
 
 
 .about-info {
-    width: 1000px;
     display: flex;
     flex-direction: column;
     flex: 1;
-    align-items: center;
 }
 
 
 .h2-container {
-    flex: 1;
     color: rgb(166, 166, 166);
-    font-size: 25px;
+    font-size: 2rem;
     margin-top: 10px;
     padding-left: 50px;
     padding-right: 50px;
     text-align: justify;
-    line-height: 2.5vw;
+    line-height: 2.6vw;
     margin-left: 50px;
 }
 

@@ -140,6 +140,8 @@ span {
     color: rgba(166, 166, 166, 1);
 }
 .extra-info {
+    text-align: justify;
+    padding-right: 40px;
     margin-top: 0.9vw;
     font-family: Montserrat;
     font-weight: 300;
