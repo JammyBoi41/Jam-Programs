@@ -1,6 +1,6 @@
 body {
     background-color: #121212;
-    font-family: sans-serif;
+    font-family: Agdasima;
     padding: 0;
     background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0, 0, 0, 1)), url(background.jpg);
     background-size: 100%;
@@ -19,18 +19,24 @@ img {
     height: 100%;
 }
 
+.title {
+    display: flex;
+    width: 85vw;
+}
+
+
+
 .title h1{ /* affects all titles*/
     display: flex;
     width: 100%;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     font-family: Agdasima;
     position: relative;
     font-size: 4vw;
     color: white;
     font-weight: 400;
-    margin-bottom: 30px;
-
+    margin-left: 1vw;
 }
 
 

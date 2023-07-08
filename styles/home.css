@@ -26,14 +26,15 @@
     color: white;
     font-weight: 800;
     margin-top: 200px;
-    font-size: 3.5vw;
-    margin-bottom: 1vw;
+    font-size: 5vw;
+    margin-bottom: 0.5vw;
 }
 
 .home h2 {
-    width: 800px;
+    font-size: 1.7vw;     
+    width: 50vw;
     text-align: center;
-    line-height: 30px;
+    line-height: 2.5vw;
     color: rgb(166, 166, 166);
 }
 

@@ -1,8 +1,8 @@
 .extracurriculars {
     display: flex;
     flex-direction: column;
+    align-items: center;
     color: white;
-    margin-top: 50px;
 }
 
 
@@ -15,12 +15,14 @@ span {
 .extracurricular-container {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    align-items: center;
     height: 400px; /*made a little bigger than the height of the biggest paragraph so items don't shift around*/
+    width: 85vw;
 }
 
 .ball-container{
     display: flex;
+    margin-right: 1.5vw;
 }
 
 .ball1,.ball2,.ball3 {
@@ -125,7 +127,6 @@ span {
     display: flex;
     flex-direction: column;
     align-items: left;
-    margin-left: 20px;
 }
 .extra-title {
     font-family: Montserrat;
@@ -145,7 +146,7 @@ span {
     margin-top: 0.9vw;
     font-family: Montserrat;
     font-weight: 300;
-    font-size: 1.6vw;
+    font-size: 1.2vw;
     color: rgba(166, 166, 166, 1);
 }
 

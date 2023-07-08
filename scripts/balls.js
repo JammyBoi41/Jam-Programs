@@ -1,10 +1,31 @@
 //PRIMARY FUNCTIONS
 
+const ball = document.querySelector('.ball1');
+ball.classList.add('ballClicked');
+
+const extra_desc = document.querySelector('.js-extra-desc');
+const extra_title = extra_desc.querySelector('.js-extra-title');
+const extra_time = document.querySelector('.js-extra-time');
+const extra_info = document.querySelector('.js-extra-info');
+
+extra_desc.classList.add('ballDesc');
+
+extra_title.innerHTML = 'KOREAN UNDERGRADUATE STUDENT ASSOCIATION';
+extra_time.innerHTML = '<i>August 2021 - April 2023</i>';
+extra_info.innerText = 'Having dedicated 2 years of my undergraduate experience to KUSA, I\'ve had the opportunity to be on UF\'s KUSA board as an Athletic Director and as a Korean Language Program Chair. Both posiitions have allowed me to interact further with people of Korean heritage and those who hold an interest in Korean culture at UF, I\'ve also had the fortune of working alongside co-chairs to make events such as Running Man and Language Workshops possible through cooperation and planning.';
+
+
+
+
+
+
+
+
 function swapText(ballNumber) {
                 
     let ball = document.querySelector(`.${ballNumber}`); //currente .ball_ object being clicked on
     if (ball.classList.contains('ballClicked')) {
-        return; // Exit early if the ball is already active
+        return; //exit early if the ball is already active
     }
     toggleOff(); //makes sure to toggle off any other clicked button before clicking the new button
     ball.classList.add('ballClicked');
@@ -13,6 +34,7 @@ function swapText(ballNumber) {
     const extra_title = extra_desc.querySelector('.js-extra-title');
     const extra_time = document.querySelector('.js-extra-time');
     const extra_info = document.querySelector('.js-extra-info');
+    
     
     if(ballNumber === 'ball1') { //ball for KUSA
         const newTitle = 'KOREAN UNDERGRADUATE STUDENT ASSOCIATION';

@@ -19,6 +19,8 @@
     margin-right: 50px;
     font-size: 18px;
     position: relative;
+    font-family: Agdasima;
+    font-size: 1.8vw;
 }
 
 .header button::after {
@@ -30,7 +32,7 @@
     bottom: 0; /* from the bottom of respective button in header*/
     left: 0;
     right: 0;
-    top: 25px;
+    top: 2.5vw;
     transition: 0.2s;
 }
 

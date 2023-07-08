@@ -1,0 +1,77 @@
+.skills {
+    display: flex;
+    flex-direction: column; /* don't forget this lol */
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+
+
+.skill-container {
+    width: 1000px;
+    height: 1000px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.skill {
+    height: 250px;
+    width: 250px;
+    position: relative;
+}
+
+.outer {
+    background-color: #e1e1e5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    box-shadow: 6px 6px 4px -1px rgba(0,0,0,0.15),
+                0px 0px 4px -1px rgba(255, 255, 255, 0.7)
+}
+
+.inner {
+    background-color: #121212;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    /*box-shadow: inset 4px 4px 0px 0px rgba(0,0,0,0.2),
+                 inset 4px 4px 0px 0px rgba(0,0,0,0.2),
+                 -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+                 0.5px 0.5px 0px rgba(0,0,0,0.15),
+                 0px 12px 10px 0px rgba(0,0,0,0.05);*/
+}
+
+circle { /* the colored part of circular prog bar*/
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 21px; /* circle thickness */
+    stroke-dasharray: 560; /* amount of completeness - MAX = 472* OPPOSITE = stroke-dashoffset */
+    stroke-dashoffset: 560;
+    animation: load 2s ease forwards;
+}
+
+svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.language {
+    font-family: Agdasima;
+    color: white;
+    font-size: 2vw;
+}
+
+@keyframes load {
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
