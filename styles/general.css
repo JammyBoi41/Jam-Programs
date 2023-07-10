@@ -1,10 +1,10 @@
 body {
-    background-color: #121212;
+    background-color: black;
     font-family: Agdasima;
     padding: 0;
-    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0, 0, 0, 1)), url(background.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
+    z-index: 1;
 }
 
 

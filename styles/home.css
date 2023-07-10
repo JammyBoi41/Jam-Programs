@@ -1,4 +1,7 @@
 .home {
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0, 0, 0, 1)), url(background.jpg);
+    background-position: center;
+    background-size: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -9,10 +12,12 @@
 
 @keyframes fadeAnimation {
     0% {
+        transform: translateY(100px);
         opacity: 0;
     }
 
     100% {
+        transform: translateY(0);
         opacity: 1;
     }
 }
@@ -21,8 +26,8 @@
 
 .home h1{
     animation-name: fadeAnimation;
-    animation-duration: 0.7s;
-    animation-timing-function: ease-in;
+    animation-duration: 1s;
+    animation-timing-function: ease;
     color: white;
     font-weight: 800;
     margin-top: 200px;
@@ -44,15 +49,15 @@
     animation: fadeAnimation;
     animation-fill-mode: forwards; /* makes it stay (like QAnimation.finished in PySide) */
     animation-duration: 1s; /* wait between the h1 and h2*/
-    animation-delay: 1s;
+    animation-timing-function: ease;
 }
 
 .lets-go {
     opacity: 0;
     animation: fadeAnimation;
+    animation-timing-function: ease;
     animation-fill-mode: forwards;
     animation-duration: 1s;
-    animation-delay: 2s;
 }
 
 .home span {

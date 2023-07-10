@@ -4,6 +4,7 @@
     min-height: 75vh;
     align-items: center;
     margin-bottom: 2vw;
+    z-index: 1;
 }
 
 .about .title h1 {
