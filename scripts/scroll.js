@@ -1,0 +1,1 @@
+// the file for highlighting the header corresponding to the section the user is currently in
