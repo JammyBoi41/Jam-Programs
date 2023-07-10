@@ -75,7 +75,7 @@ span {
     backface-visibility: hidden;
     color: white;
     border-radius: 10px;
-    background-color: rgba(55, 55, 55, 0.3);
+    background-color: #121212;
 }
 .back {
     display: flex;

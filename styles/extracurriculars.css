@@ -23,11 +23,9 @@ span {
 .ball-container{
     display: flex;
     margin-right: 1.5vw;
-    transform: rotate(45deg);
 }
 
 .ball1,.ball2,.ball3 {
-    transform: rotate(-45deg);
     border-radius: 100px;
     height: 150px;
     width: 150px;
