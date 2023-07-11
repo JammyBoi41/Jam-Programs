@@ -1,6 +1,7 @@
 body {
     background-color: black;
     font-family: Agdasima;
+    margin: 0;
     padding: 0;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -24,18 +25,26 @@ img {
     width: 85vw;
 }
 
+.about,.project,.extracurriculars {
+    padding-top: 1vw;
+    padding-bottom: 2vw;
+}
+
+.project,.extracurriculars,.skills {
+    background: black;
+}
 
 
 .title h1{ /* affects all titles*/
     display: flex;
     width: 100%;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
     font-family: Agdasima;
     position: relative;
-    font-size: 3vw;
+    font-size: 4vw;
     color: white;
-    font-weight: 400;
+    font-weight: bold;
     margin-left: 1vw;
 }
 

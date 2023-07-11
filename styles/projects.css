@@ -3,18 +3,38 @@
     flex-direction: column;
     align-items: center;
     height: auto;
-    margin-bottom: 2vw;
+    min-height: 88vh;
+    background: black;
 }
+
+.project .title h1{
+    position: relative;
+}
+
+.project .title h1::after {
+    position: absolute;
+    content:"PROJECTS";
+    color: rgba(255, 255, 255, 0.065);
+    font-size: 6vw;
+    font-family: Agdasima;
+    font-weight: bold;
+    bottom: -10;
+}
+.project1::after {
+    position: absolute;
+    content: "Summer 2023";
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 2vw;
+    font-family: Agdasima;
+    bottom: -2.3vw;
+}
+
 
 .project img {
     width: 90%;
     height: 90%;
-    margin: 0;
-    padding: 0;
     border: none;
     border-radius: 10px;
-    
-
 }
 .project button {
     width: 100%;
@@ -47,13 +67,14 @@ span {
 }
 
 .card1,.card2,.card3 {
+    position: relative;
     display: flex;
     transform-style: preserve-3d;
     transition: 0.4s ease all;
     width: 26vw;
     height: 26vw;
-    margin-left: 30px;
-    margin-right: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
     border-radius: 10px;
     background-color: transparent;
 }
@@ -64,8 +85,8 @@ span {
     transform: rotateY(180deg);
     box-shadow: 0px 0px 40px rgba(34, 255, 255, 0.3);
     cursor: pointer;
-
 }
+
 .front {
     position: absolute; /* keeps the front and back on parent container (.card) */
     width: 100%;
@@ -93,8 +114,29 @@ span {
     text-align: start;
     font-family: Montserrat;
     font-weight: 300;
-    font-size: 1vw;
+    font-size: 0.8vw;
     line-height: 1.5vw;
     color: white;
     padding-left: 30px;
+}
+
+.project-name {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    display: flex;
+    width: 85vw;
+    color: white;
+    font-size: 2.1vw;
+    justify-content: space-between;
+    text-decoration: underline;
+    text-decoration-color: #22ffff;
+    text-underline-offset: 0.4vw;
+    text-decoration-thickness: 0.4px;
+}
+.project1 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 26vw;
 }

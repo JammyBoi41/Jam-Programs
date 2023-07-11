@@ -1,5 +1,5 @@
 .home {
-    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0, 0, 0, 1)), url(background.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0, 0, 0, 1)), url(background.jpg);
     background-position: center;
     background-size: 100%;
     display: flex;
@@ -8,6 +8,7 @@
     margin-top: 20px;
     min-height: 100vh; /* use this to make it fill up entire screen across different*/
     margin-bottom: 0px;
+    background-attachment: fixed;
 }
 
 @keyframes fadeAnimation {
@@ -25,9 +26,12 @@
 
 
 .home h1{
+    animation-delay: 1s;
+    opacity: 0;
     animation-name: fadeAnimation;
     animation-duration: 1s;
     animation-timing-function: ease;
+    animation-fill-mode: forwards;
     color: white;
     font-weight: 800;
     margin-top: 200px;
@@ -37,6 +41,7 @@
 }
 
 .home h2 {
+    animation-delay: 1s;
     font-size: 1.8vw;     
     width: 50vw;
     text-align: center;
@@ -45,6 +50,7 @@
 }
 
 .about-me {
+    animation-delay: 1s;
     opacity: 0; /* set it invisible initially*/
     animation: fadeAnimation;
     animation-fill-mode: forwards; /* makes it stay (like QAnimation.finished in PySide) */
@@ -53,6 +59,7 @@
 }
 
 .lets-go {
+    animation-delay: 1s;
     opacity: 0;
     animation: fadeAnimation;
     animation-timing-function: ease;

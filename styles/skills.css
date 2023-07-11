@@ -6,15 +6,29 @@
     height: 500px;
 }
 
-
-
-.skill-container {
-    width: 1000px;
-    height: 1000px;
-    display: flex;
+.skills .title h1{
+    align-items: center;
+    justify-content: center;
+    padding-right: 5vw;
 }
 
-.skill {
+.skills .title h1::after {
+    position: absolute;
+    content:"SKILLS";
+    color: rgba(255, 255, 255, 0.065);
+    font-size: 6vw;
+    font-family: Agdasima;
+    font-weight: bold;
+    bottom: -10;
+}
+
+.skill-container {
+    width: 85vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cplusplus,.css-html,.python,.sql,.java {
     height: 250px;
     width: 250px;
     position: relative;
@@ -40,23 +54,40 @@
     height: 160px;
     width: 160px;
     border-radius: 50%;
-    /*box-shadow: inset 4px 4px 0px 0px rgba(0,0,0,0.2),
+    box-shadow: inset 4px 4px 0px 0px rgba(0,0,0,0.2),
                  inset 4px 4px 0px 0px rgba(0,0,0,0.2),
                  -0.5px -0.5px 0px rgba(255, 255, 255, 1),
                  0.5px 0.5px 0px rgba(0,0,0,0.15),
-                 0px 12px 10px 0px rgba(0,0,0,0.05);*/
+                 0px 12px 10px 0px rgba(0,0,0,0.05);
 }
 
 circle { /* the colored part of circular prog bar*/
     fill: none;
     stroke: url(#GradientColor);
     stroke-width: 21px; /* circle thickness */
-    stroke-dasharray: 560; /* amount of completeness - MAX = 472* OPPOSITE = stroke-dashoffset */
+    stroke-dasharray: 560; /* amount of completeness - MAX = 560* OPPOSITE = stroke-dashoffset */
     stroke-dashoffset: 560;
-    animation: load 2s ease forwards;
+    box-shadow: 0px 0px 40px 10px rgba(255, 255, 255, 0.6);
+}
+.java-circle {
+    animation: java 2s ease forwards;
+}
+.css-html-circle {
+    animation: css-html 2s ease forwards;
+}
+.python-circle {
+    animation: python 2s ease forwards;
+}
+.cplusplus-circle {
+    animation: cplusplus 2s ease forwards;
+}
+.sql-circle {
+    animation: sql 2s ease forwards;
 }
 
+
 svg {
+    transform: rotate(-90deg);
     position: absolute;
     top: 0;
     left: 0;
@@ -68,8 +99,39 @@ svg {
     font-size: 2vw;
 }
 
-@keyframes load {
+@keyframes cplusplus {
     100% {
-        stroke-dashoffset: 0;
+        stroke-dashoffset: 168;
     }
+}
+@keyframes css-html {
+    100% {
+        stroke-dashoffset: 224;
+    }
+}
+@keyframes python {
+    100% {
+        stroke-dashoffset: 112;
+    }
+}
+@keyframes sql {
+    100% {
+        stroke-dashoffset: 224;
+    }
+}
+@keyframes java {
+    100% {
+        stroke-dashoffset: 280;
+    }
+}
+
+.skill-desc {
+    display: flex;
+    color: rgba(166, 166, 166, 0.8);
+    font-family: Agdasima;
+    font-size: 2vw;
+    width: 85vw;
+    text-align: center;
+    margin-bottom: 2vw;
+
 }

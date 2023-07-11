@@ -1,5 +1,5 @@
 .header {
-    background-color: black;
+    background-color: rgba(0,0,0,1);
     position: fixed;
     display: flex;
     align-items: center;

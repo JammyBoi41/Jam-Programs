@@ -1,15 +1,26 @@
 .about {
+    padding-top: 1vw;
+    padding-bottom: 5vw;
+    background: #13131a;
     display: flex;
     flex-direction: column;
     min-height: 75vh;
     align-items: center;
-    margin-bottom: 2vw;
     z-index: 1;
+}
+
+.about .title h1::after {
+    position: absolute;
+    content:"ABOUT";
+    color: rgba(255, 255, 255, 0.03);
+    font-size: 5.5vw;
+    font-family: Agdasima;
+    font-weight: bold;
+    bottom: -10;
 }
 
 .about .title h1 {
     justify-content: center;
-    margin-bottom: 0px;
 }
 
 .about-div {
@@ -92,7 +103,6 @@
 .about-info {
     display: flex;
     flex-direction: column;
-    flex: 1;
 }
 
 
